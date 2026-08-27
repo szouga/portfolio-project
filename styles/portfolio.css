@@ -1,21 +1,71 @@
+:root {
+  --branding-color: lightblue;
+  --subheading-font-family: "Roboto", sans-serif;
+  --heading-font-family: "Poppins", sans-serif;
+  --secondary-color: #ada2c9;
+}
 body {
-  background-color: lightblue;
-  text-align: center;
+  background-color: #fcfbf7;
+}
+
+.hero {
+  background-color: var(--secondary-color);
+  padding: 160px 20px;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
 }
 
 /*if want another font-family style simply make another
 class selector and adjust the properties given*/
 
 .poppins-font {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--heading-font-family);
   font-weight: 400;
   font-style: normal;
 }
 
 .roboto-font {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--subheading-font-family);
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+}
+
+.tracking-wider {
+  letter-spacing: 0.1em;
+}
+
+.hero-img {
+  max-width: 440px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.hero p {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: var(--subheading-font-family);
+  margin: 0;
+}
+
+.hero h2 {
+  font-family: var(--heading-font-family);
+  font-weight: normal;
+  line-height: 2;
+  font-style: 24px;
+}
+
+.hero button {
+  background-color: var(--branding-color);
+  border-radius: 4px;
+  color: var(--secondary-color);
+  font-weight: 800;
+  font-size: 38px;
+  padding: 15px 3dvh;
+  line-height: 27px;
 }
