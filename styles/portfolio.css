@@ -1,0 +1,21 @@
+body {
+  background-color: lightblue;
+  text-align: center;
+}
+
+/*if want another font-family style simply make another
+class selector and adjust the properties given*/
+
+.poppins-font {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-font {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
