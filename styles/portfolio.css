@@ -65,7 +65,34 @@ class selector and adjust the properties given*/
   border-radius: 4px;
   color: var(--secondary-color);
   font-weight: 800;
-  font-size: 38px;
-  padding: 15px 3dvh;
+  font-size: 18px;
+  padding: 15px 30px;
   line-height: 27px;
+}
+
+.btn-branding-outline {
+  border: 1px solid var(--branding-color);
+  border-radius: 4px;
+  color: var(--secondary-color);
+  font-weight: 800;
+  font-size: 18px;
+  padding: 15px 30px;
+  line-height: 27px;
+}
+
+.project-description {
+  padding: 120px 60px;
+}
+@media (max-width: 900px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 44px;
+  }
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
 }
