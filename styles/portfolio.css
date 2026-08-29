@@ -96,3 +96,8 @@ class selector and adjust the properties given*/
     text-align: center;
   }
 }
+
+.small-bullets li::marker {
+  font-size: 0.65rem; /* Scales the circle size down */
+  color: var(--branding-color);
+}

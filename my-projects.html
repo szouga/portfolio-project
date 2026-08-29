@@ -14,14 +14,11 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    <!-- PASTE THIS LINK INSTEAD -->
+    <script
+      src="https://kit.fontawesome.com/ddc3ee268a.js"
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    ></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,27 +37,22 @@
         <div class="font-monospace fw-bold text-dark fs-5">
           SCZN
           <span class="text-primary small" style="font-size: 0.75rem"
-            ><em>Web Developer/Designer | UX Researcher</em></span
+            >[HTX]</span
           >
         </div>
         <nav class="d-flex gap-4 small fw-medium">
-          <a
-            href="/"
-            class="text-dark text-decoration-none border-bottom border-3 pb-2"
-            style="border-color: var(--secondary-color)"
-            aria-current="page"
-            >Home</a
-          >
+          <a href="/" class="text-secondary text-decoration-none">Home</a>
           <a href="about.html" class="text-secondary text-decoration-none"
             >About</a
           >
-          <a href="my-projects.html" class="text-secondary text-decoration-none"
+          <a
+            href="my-projects.html"
+            class="text-dark text-decoration-none border-bottom border-3 pb-2"
+            style="border-color: var(--secondary-color)"
+            aria-current="page"
             >My Projects</a
           >
-          <a
-            href="contact.html"
-            #view-featured-projects
-            class="text-secondary text-decoration-none"
+          <a href="contact.html" class="text-secondary text-decoration-none"
             >Contact</a
           >
         </nav>
@@ -69,10 +61,16 @@
 
     <!-- MAIN HERO CONTENT -->
     <main class="flex-grow-1 d-block mx-auto align-items-center py-5">
-      <div class="hero rounded-pill">
+      <div class="hero">
         <div class="row align-items-center g-5">
           <!-- Text Block -->
-          <div class="col-12 col-md-7 d-block mx-auto">
+          <div class="col-12 col-md-7">
+            <div
+              class="text-primary fw-bold text-uppercase small mb-3 tracking-wider font-monospace"
+              style="font-size: 0.8rem"
+            >
+              Front End Developer // Based in HTX
+            </div>
             <h1
               class="display-4 fw-black text-dark lh-1 mb-4 poppins-font"
               style="font-weight: 900; font-size: 3.5rem"
@@ -88,32 +86,25 @@
               production code.
             </p>
             <div class="d-flex gap-3 pt-2">
-              <a href="contact.html" class="text-decoration-none">
-                <button
-                  class="btn btn-branding-outline fw-semibold fs-6 text-dark px-4 py-2 rounded-1 fw-medium d-flex align-items-center gap-2"
-                >
-                  Contact Me
-                </button>
-              </a>
-              <a href="#view-featured-projects">
-                <button
-                  class="btn btn-branding-outline fw-semibold fs-6 text-dark px-4 py-2 rounded-1 fw-medium scroll-behavior-smooth"
-                >
-                  View Projects
-                </button>
-              </a>
+              <button
+                class="btn btn-branding-outline px-4 py-2 rounded-1 fw-medium d-flex align-items-center gap-2"
+                style="font-size: 0.9rem"
+              >
+                Contact Me
+                <i class="fa-solid fa-arrow-right-long text-white"></i>
+              </button>
+              <button
+                class="btn btn-branding-outline px-4 py-2 rounded-1 fw-medium"
+                style="font-size: 0.9rem"
+              >
+                View Projects
+              </button>
             </div>
           </div>
         </div>
       </div>
 
-      <p
-        id="view-featured-projects"
-        class="text-center m-5"
-        style="font-family: var(--subheading-font-family)"
-      >
-        Featured Projects
-      </p>
+      <p class="text-center m-5">Featured Projects</p>
 
       <div class="container">
         <div class="row mb-5">
@@ -127,22 +118,9 @@
           </div>
           <div class="col">
             <div class="project-description">
-              <h2 class="mb-5" style="font-family: var(--heading-font-family)">
-                Yogurt Project
-              </h2>
-              <p
-                class="mb-5"
-                style="font-family: var(--subheading-font-family)"
-              >
-                A fun interactive webpage about yogurt
-              </p>
-              <a
-                href="https://github.com/szouga/shecodes_yogurt_landingpage_project.html"
-                target="_blank"
-                class="btn btn-branding-outline"
-              >
-                View More
-              </a>
+              <h2 class="mb-5">Yogurt Project</h2>
+              <p class="mb-5">A project about yogurt.</p>
+              <a href="" class="btn btn-branding-outline"> Learn More </a>
             </div>
           </div>
         </div>
@@ -150,23 +128,9 @@
         <div class="row mb-5">
           <div class="col">
             <div class="project-description">
-              <h2 class="mb-5" style="font-family: var(--heading-font-family)">
-                AI French Poem Generator
-              </h2>
-              <p
-                class="mb-5"
-                style="font-family: var(--subheading-font-family)"
-              >
-                A tool that can turn any random topic into a breath-taking poem
-                in French
-              </p>
-              <a
-                href="https://github.com/szouga/french-poem-generator"
-                target="_blank"
-                class="btn btn-branding-outline"
-              >
-                View More
-              </a>
+              <h2 class="mb-5">French Poem Generator Project</h2>
+              <p class="mb-5">A project about generating poems using AI.</p>
+              <a href="" class="btn btn-branding-outline"> Learn More </a>
             </div>
           </div>
           <div class="col d-none d-lg-block">
@@ -190,22 +154,9 @@
           </div>
           <div class="col">
             <div class="project-description">
-              <h2 class="mb-5" style="font-family: var(--heading-font-family)">
-                Weather App
-              </h2>
-              <p
-                class="mb-5"
-                style="font-family: var(--subheading-font-family)"
-              >
-                Check the weather in real time with this app made with APIs
-              </p>
-              <a
-                href="https://github.com/szouga/shecodes_weather_app_project"
-                target="_blank"
-                class="btn btn-branding-outline"
-              >
-                View More
-              </a>
+              <h2 class="mb-5">Weather App Project</h2>
+              <p class="mb-5">A project about weather app.</p>
+              <a href="" class="btn btn-branding-outline"> Learn More </a>
             </div>
           </div>
         </div>
@@ -217,38 +168,33 @@
       >
         <div class="d-flex gap-3 font-monospace">
           <a
-            href="https://github.com/szouga"
-            target="_blank"
+            href="#"
             class="text-secondary text-decoration-none d-flex align-items-center gap-1"
           >
             <i class="fa-brands fa-github text-dark"></i> Github
           </a>
           <a
-            href="https://www.linkedin.com/in/sophie-clement-zouga-ndong/"
-            target="_blank"
+            href="#"
             class="text-secondary text-decoration-none d-flex align-items-center gap-1"
           >
             <i class="fa-brands fa-linkedin text-dark"></i> LinkedIn
           </a>
           <a
-            href="contact.html"
+            href="#"
             class="text-secondary text-decoration-none d-flex align-items-center gap-1"
           >
-            <i class="fa-regular fa-envelope text-dark"></i> Email
+            <i class="fa-brands fa-instagram text-dark"></i> Instagram
           </a>
         </div>
         <div class="font-monospace text-end" style="font-size: 0.8rem">
-          <a href="https://github.com/szouga/portfolio-project" target="_blank"
-            >Website</a
-          >
-          deployed at
+          2026 Sophie Clement Zouga Ndong. All rights reserved.
+          <br />
+          Website deployed at
           <a href="https://szouga.github.io/portfolio-project/">GitHub Pages</a>
           and
           <a href="https://shecodes-portfolio-project-sczn.netlify.app/">
             Netlify
           </a>
-          <br />
-          © 2026 Sophie Clement Zouga Ndong. All rights reserved.
         </div>
       </div>
     </footer>
