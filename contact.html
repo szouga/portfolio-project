@@ -14,11 +14,14 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <!-- PASTE THIS LINK INSTEAD -->
-    <script
-      src="https://kit.fontawesome.com/ddc3ee268a.js"
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
-    ></script>
+      referrerpolicy="no-referrer"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,7 +40,7 @@
         <div class="font-monospace fw-bold text-dark fs-5">
           SCZN
           <span class="text-primary small" style="font-size: 0.75rem"
-            >[HTX]</span
+            ><em>Web Developer/Designer | UX Researcher</em></span
           >
         </div>
         <nav class="d-flex gap-4 small fw-medium">
@@ -59,143 +62,150 @@
       </div>
     </header>
 
-    <!-- MAIN HERO CONTENT -->
-    <main class="flex-grow-1 d-block mx-auto align-items-center py-5">
-      <div class="hero">
-        <div class="row align-items-center g-5">
-          <!-- Text Block -->
-          <div class="col-12 col-md-7">
-            <div
-              class="text-primary fw-bold text-uppercase small mb-3 tracking-wider font-monospace"
-              style="font-size: 0.8rem"
+    <div class="container py-5">
+      <div
+        class="rounded-4 ps-5 pe-5 position-relative overflow-hidden d-inline-block mb-5"
+        style="background-color: var(--secondary-color)"
+      >
+        <span
+          class="text-dark tracking-wider fw-bold"
+          style="font-family: var(--heading-font-family)"
+          >Contact Me</span
+        >
+      </div>
+
+      <div class="row justify-content-between">
+        <div class="col-12 col-md-6">
+          <div
+            class="text-primary fw-bold text-uppercase small mb-3 tracking-wider font-monospace"
+            style="font-size: 0.8rem"
+          >
+            Email me at:
+          </div>
+
+          <p
+            class="text-secondary fs-6 mb-4 roboto-font"
+            style="max-width: 480px"
+          >
+            szouga9@gmail.com
+          </p>
+
+          <div
+            class="text-primary fw-bold text-uppercase small mb-3 tracking-wider font-monospace"
+            style="font-size: 0.8rem"
+          >
+            Message me through:
+          </div>
+
+          <a
+            href="https://www.linkedin.com/in/sophie-clement-zouga-ndong/"
+            target="_blank"
+            class="btn btn-branding-outline"
+            ><i class="fa-brands fa-linkedin text-dark"></i> LinkedIn
+          </a>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div
+            class="form-container card border rounded-4 bg-white p-5 mx-auto"
+          >
+            <form
+              action="mailto:szouga9@gmail.com"
+              method="post"
+              enctype="text/plain"
             >
-              Front End Developer // Based in HTX
-            </div>
-            <h1
-              class="display-4 fw-black text-dark lh-1 mb-4 poppins-font"
-              style="font-weight: 900; font-size: 3.5rem"
-            >
-              Sophie Clement<br />Zouga Ndong
-            </h1>
-            <p
-              class="text-secondary fs-6 mb-4 roboto-font lh-base"
-              style="max-width: 480px"
-            >
-              Crafting highly polished, accessible, and high-performance user
-              interfaces. I bridge the gap between design systems and clean
-              production code.
-            </p>
-            <div class="d-flex gap-3 pt-2">
+              <!--Full Name Input Group-->
+              <div class="mb-4">
+                <label
+                  for="fullName"
+                  class="form-label text-uppercase text-secondary font-monospace tracking-wider fw-medium mb-1"
+                  style="font-size: 0.75rem"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control form-contact-input"
+                  id="fullName"
+                  placeholder="Jane Doe"
+                  required
+                />
+              </div>
+
+              <!-- Email Address Input Group -->
+              <div class="mb-4">
+                <label
+                  for="emailAddress"
+                  class="form-label text-uppercase text-secondary font-monospace tracking-wider fw-medium mb-1"
+                  style="font-size: 0.75rem"
+                  >Email Address</label
+                >
+                <!-- name="_replyto" or name="email" allows you to click "Reply" directly inside your inbox to answer them -->
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control form-contact-input"
+                  id="emailAddress"
+                  placeholder="jane@example.com"
+                  required
+                />
+              </div>
+
+              <!-- Your Message Input Group -->
+              <div class="mb-5">
+                <label
+                  for="userMessage"
+                  class="form-label text-uppercase text-secondary font-monospace tracking-wider fw-medium mb-1"
+                  style="font-size: 0.75rem"
+                  >Your Message</label
+                >
+                <textarea
+                  name="message"
+                  class="form-control form-contact-input"
+                  id="userMessage"
+                  rows="3"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+
               <button
-                class="btn btn-branding-outline px-4 py-2 rounded-1 fw-medium d-flex align-items-center gap-2"
-                style="font-size: 0.9rem"
+                type="submit"
+                class="btn btn-branding-outline w-100 py-1 fw-medium rounded-3"
               >
-                Contact Me
-                <i class="fa-solid fa-arrow-right-long text-white"></i>
+                📨Send Message
               </button>
-              <button
-                class="btn btn-branding-outline px-4 py-2 rounded-1 fw-medium"
-                style="font-size: 0.9rem"
-              >
-                View Projects
-              </button>
-            </div>
+            </form>
           </div>
         </div>
       </div>
+    </div>
 
-      <!--On this page place your email address (use input type) and Linkedin and not necessary to place in footer-->
-      <p class="text-center m-5">Featured Projects</p>
-
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col d-none d-lg-block">
-            <img
-              src="images/yogurt.png"
-              class="img-fluid shadow"
-              alt="yogurt website"
-              style="border-radius: 24px 25px"
-            />
-          </div>
-          <div class="col">
-            <div class="project-description">
-              <h2 class="mb-5">Yogurt Project</h2>
-              <p class="mb-5">A project about yogurt.</p>
-              <a href="" class="btn btn-branding-outline"> Learn More </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mb-5">
-          <div class="col">
-            <div class="project-description">
-              <h2 class="mb-5">French Poem Generator Project</h2>
-              <p class="mb-5">A project about generating poems using AI.</p>
-              <a href="" class="btn btn-branding-outline"> Learn More </a>
-            </div>
-          </div>
-          <div class="col d-none d-lg-block">
-            <img
-              src="images/ai-french-poem-generator.png"
-              class="img-fluid shadow"
-              alt="ai french poem generator website"
-              style="border-radius: 24px 25px"
-            />
-          </div>
-        </div>
-
-        <div class="row mb-5">
-          <div class="col d-none d-lg-block">
-            <img
-              src="images/weather-app.png"
-              class="img-fluid shadow"
-              alt="weather app website"
-              style="border-radius: 24px 25px"
-            />
-          </div>
-          <div class="col">
-            <div class="project-description">
-              <h2 class="mb-5">Weather App Project</h2>
-              <p class="mb-5">A project about weather app.</p>
-              <a href="" class="btn btn-branding-outline"> Learn More </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
     <footer class="py-4 mt-auto">
       <div
         class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 small text-secondary"
       >
         <div class="d-flex gap-3 font-monospace">
           <a
-            href="#"
+            href="https://github.com/szouga"
+            target="_blank"
             class="text-secondary text-decoration-none d-flex align-items-center gap-1"
           >
             <i class="fa-brands fa-github text-dark"></i> Github
           </a>
-          <a
-            href="#"
-            class="text-secondary text-decoration-none d-flex align-items-center gap-1"
-          >
-            <i class="fa-brands fa-linkedin text-dark"></i> LinkedIn
-          </a>
-          <a
-            href="#"
-            class="text-secondary text-decoration-none d-flex align-items-center gap-1"
-          >
-            <i class="fa-brands fa-instagram text-dark"></i> Instagram
-          </a>
         </div>
         <div class="font-monospace text-end" style="font-size: 0.8rem">
-          2026 Sophie Clement Zouga Ndong. All rights reserved.
-          <br />
-          Website deployed at
+          <a href="https://github.com/szouga/portfolio-project" target="_blank"
+            >Website</a
+          >
+          deployed at
           <a href="https://szouga.github.io/portfolio-project/">GitHub Pages</a>
           and
           <a href="https://shecodes-portfolio-project-sczn.netlify.app/">
             Netlify
           </a>
+          <br />
+          © 2026 Sophie Clement Zouga Ndong. All rights reserved.
         </div>
       </div>
     </footer>

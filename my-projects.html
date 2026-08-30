@@ -14,11 +14,14 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <!-- PASTE THIS LINK INSTEAD -->
-    <script
-      src="https://kit.fontawesome.com/ddc3ee268a.js"
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
-    ></script>
+      referrerpolicy="no-referrer"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,7 +40,7 @@
         <div class="font-monospace fw-bold text-dark fs-5">
           SCZN
           <span class="text-primary small" style="font-size: 0.75rem"
-            >[HTX]</span
+            ><em>Web Developer/Designer | UX Researcher</em></span
           >
         </div>
         <nav class="d-flex gap-4 small fw-medium">
@@ -59,142 +62,245 @@
       </div>
     </header>
 
-    <!-- MAIN HERO CONTENT -->
-    <main class="flex-grow-1 d-block mx-auto align-items-center py-5">
-      <div class="hero">
-        <div class="row align-items-center g-5">
-          <!-- Text Block -->
-          <div class="col-12 col-md-7">
-            <div
-              class="text-primary fw-bold text-uppercase small mb-3 tracking-wider font-monospace"
-              style="font-size: 0.8rem"
-            >
-              Front End Developer // Based in HTX
-            </div>
-            <h1
-              class="display-4 fw-black text-dark lh-1 mb-4 poppins-font"
-              style="font-weight: 900; font-size: 3.5rem"
-            >
-              Sophie Clement<br />Zouga Ndong
-            </h1>
-            <p
-              class="text-secondary fs-6 mb-4 roboto-font lh-base"
-              style="max-width: 480px"
-            >
-              Crafting highly polished, accessible, and high-performance user
-              interfaces. I bridge the gap between design systems and clean
-              production code.
-            </p>
-            <div class="d-flex gap-3 pt-2">
-              <button
-                class="btn btn-branding-outline px-4 py-2 rounded-1 fw-medium d-flex align-items-center gap-2"
-                style="font-size: 0.9rem"
-              >
-                Contact Me
-                <i class="fa-solid fa-arrow-right-long text-white"></i>
-              </button>
-              <button
-                class="btn btn-branding-outline px-4 py-2 rounded-1 fw-medium"
-                style="font-size: 0.9rem"
-              >
-                View Projects
-              </button>
-            </div>
-          </div>
-        </div>
+    <!--container for all three cards-->
+    <div class="container gx-1 gx-md-4">
+      <div
+        class="rounded-4 ps-5 pe-5 position-relative overflow-hidden d-inline-block mb-5"
+        style="background-color: var(--secondary-color)"
+      >
+        <span
+          class="text-dark tracking-wider fw-bolder"
+          style="font-family: Geist"
+          >My Projects</span
+        >
       </div>
 
-      <p class="text-center m-5">Featured Projects</p>
-
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col d-none d-lg-block">
+      <div class="row">
+        <!--container for croissant project-->
+        <div class="col-4 pb-4 border rounded-3 bg-white">
+          <br />
+          <a
+            href="https://szouga.github.io/Croissant/index.html"
+            class="btn d-block mx-auto"
+            target="_blank"
+          >
             <img
-              src="images/yogurt.png"
+              src="images/animated-croissant.gif"
               class="img-fluid shadow"
-              alt="yogurt website"
-              style="border-radius: 24px 25px"
+              alt="animated croissant gif"
+              style="border-radius: 4px; width: 245px; height: 220px"
             />
-          </div>
-          <div class="col">
-            <div class="project-description">
-              <h2 class="mb-5">Yogurt Project</h2>
-              <p class="mb-5">A project about yogurt.</p>
-              <a href="" class="btn btn-branding-outline"> Learn More </a>
-            </div>
+          </a>
+          <br />
+          <p
+            class="text-primary fw-bold text-uppercase small mb-3 tracking-wider font-monospace"
+            style="font-size: 0.8rem"
+          >
+            Simple Website Template
+          </p>
+          <p
+            class="fs-4 fw-bold"
+            style="font-family: var(--heading-font-family)"
+          >
+            Croissant Project
+          </p>
+          <p
+            class="fs-6"
+            style="font-family: var(--subheading-font-family); color: #6b7280"
+          >
+            A static web application about croissants featuring a dynamic
+            navigation menu that optimizes automatically across mobile and
+            desktop devices.
+          </p>
+          <hr />
+          <div class="d-flex justify-content-start gap-2">
+            <p
+              class="badge d-inline-block bg-body-secondary px-3 py-2 rounded-1 m-0"
+              style="font-family: Geist Mono; font-size: 12px; color: #6b7280"
+            >
+              Bootstrap
+            </p>
+
+            <p
+              class="badge d-inline-block bg-body-secondary px-3 py-2 rounded-1 m-0"
+              style="font-family: Geist Mono; font-size: 12px; color: #6b7280"
+            >
+              HTML
+            </p>
+
+            <p
+              class="badge d-inline-block bg-body-secondary px-3 py-2 rounded-1 m-0"
+              style="font-family: Geist Mono; font-size: 12px; color: #6b7280"
+            >
+              CSS
+            </p>
           </div>
         </div>
 
-        <div class="row mb-5">
-          <div class="col">
-            <div class="project-description">
-              <h2 class="mb-5">French Poem Generator Project</h2>
-              <p class="mb-5">A project about generating poems using AI.</p>
-              <a href="" class="btn btn-branding-outline"> Learn More </a>
-            </div>
-          </div>
-          <div class="col d-none d-lg-block">
+        <!--container for AI project-->
+
+        <div class="col-4 border rounded-3 bg-white">
+          <br />
+          <a
+            href="https://szouga.github.io/french-poem-generator/"
+            target="_blank"
+          >
             <img
               src="images/ai-french-poem-generator.png"
               class="img-fluid shadow"
-              alt="ai french poem generator website"
-              style="border-radius: 24px 25px"
+              alt="ai french poem generator thumbnail"
+              style="border-radius: 4px; width: 363px; height: 220px"
             />
+          </a>
+          <br />
+          <br />
+
+          <p
+            class="text-primary fw-bold text-uppercase small mb-3 tracking-wider font-monospace"
+            style="font-size: 0.8rem"
+          >
+            AI
+          </p>
+          <p
+            class="fs-4 fw-bold"
+            style="font-family: var(--heading-font-family)"
+          >
+            AI French Poem Generator
+          </p>
+          <p
+            class="fs-6"
+            style="font-family: var(--subheading-font-family); color: #6b7280"
+          >
+            A fun generator that can turn any random topic into a breath-taking
+            poem in French
+          </p>
+          <hr />
+          <div class="d-flex justify-content-start gap-2">
+            <p
+              class="badge d-inline-block bg-body-secondary px-3 py-2 rounded-1 m-0"
+              style="font-family: Geist Mono; font-size: 12px; color: #6b7280"
+            >
+              UI Animation
+              <!--request appears under input once
+                submit button is clicked-->
+            </p>
+
+            <p
+              class="badge d-inline-block bg-body-secondary px-3 py-2 rounded-1 m-0"
+              style="font-family: Geist Mono; font-size: 12px; color: #6b7280"
+            >
+              APIs
+            </p>
+
+            <p
+              class="badge d-inline-block bg-body-secondary px-3 py-2 rounded-1 m-0"
+              style="font-family: Geist Mono; font-size: 12px; color: #6b7280"
+            >
+              JavaScript
+            </p>
           </div>
         </div>
 
-        <div class="row mb-5">
-          <div class="col d-none d-lg-block">
+        <!--container for weather API project-->
+        <div class="col-4 border rounded-3 bg-white">
+          <br />
+          <a
+            href="https://szouga.github.io/shecodes_weather_app_project/"
+            class="btn d-block mx-auto"
+            target="_blank"
+          >
             <img
               src="images/weather-app.png"
               class="img-fluid shadow"
-              alt="weather app website"
-              style="border-radius: 24px 25px"
+              alt="weather app thumbnail"
+              style="border-radius: 4px; width: 363px; height: 220px"
             />
-          </div>
-          <div class="col">
-            <div class="project-description">
-              <h2 class="mb-5">Weather App Project</h2>
-              <p class="mb-5">A project about weather app.</p>
-              <a href="" class="btn btn-branding-outline"> Learn More </a>
-            </div>
+          </a>
+          <br />
+          <p
+            class="text-primary fw-bold text-uppercase small mb-3 tracking-wider font-monospace"
+            style="font-size: 0.8rem"
+          >
+            API
+          </p>
+          <p
+            class="fs-4 fw-bold"
+            style="font-family: var(--heading-font-family)"
+          >
+            Weather App
+          </p>
+          <p
+            class="fs-6"
+            style="font-family: var(--subheading-font-family); color: #6b7280"
+          >
+            Check the weather with this app made with data extracted from
+            SheCodes Weather API
+          </p>
+          <hr />
+          <div class="d-flex justify-content-start gap-2">
+            <p
+              class="badge d-inline-block bg-body-secondary px-3 py-2 rounded-1 m-0"
+              style="font-family: Geist Mono; font-size: 12px; color: #6b7280"
+            >
+              APIs
+            </p>
+
+            <p
+              class="badge d-inline-block bg-body-secondary px-3 py-2 rounded-1 m-0"
+              style="font-family: Geist Mono; font-size: 12px; color: #6b7280"
+            >
+              App Development
+            </p>
+
+            <p
+              class="badge d-inline-block bg-body-secondary px-3 py-2 rounded-1 m-0"
+              style="font-family: Geist Mono; font-size: 12px; color: #6b7280"
+            >
+              Data Manipulation
+            </p>
           </div>
         </div>
       </div>
-    </main>
+    </div>
+
     <footer class="py-4 mt-auto">
       <div
         class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 small text-secondary"
       >
         <div class="d-flex gap-3 font-monospace">
           <a
-            href="#"
+            href="https://github.com/szouga"
+            target="_blank"
             class="text-secondary text-decoration-none d-flex align-items-center gap-1"
           >
             <i class="fa-brands fa-github text-dark"></i> Github
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/sophie-clement-zouga-ndong/"
+            target="_blank"
             class="text-secondary text-decoration-none d-flex align-items-center gap-1"
           >
             <i class="fa-brands fa-linkedin text-dark"></i> LinkedIn
           </a>
           <a
-            href="#"
+            href="contact.html"
             class="text-secondary text-decoration-none d-flex align-items-center gap-1"
           >
-            <i class="fa-brands fa-instagram text-dark"></i> Instagram
+            <i class="fa-regular fa-envelope text-dark"></i> Email
           </a>
         </div>
         <div class="font-monospace text-end" style="font-size: 0.8rem">
-          2026 Sophie Clement Zouga Ndong. All rights reserved.
-          <br />
-          Website deployed at
+          <a href="https://github.com/szouga/portfolio-project" target="_blank"
+            >Website</a
+          >
+          deployed at
           <a href="https://szouga.github.io/portfolio-project/">GitHub Pages</a>
           and
           <a href="https://shecodes-portfolio-project-sczn.netlify.app/">
             Netlify
           </a>
+          <br />
+          © 2026 Sophie Clement Zouga Ndong. All rights reserved.
         </div>
       </div>
     </footer>
