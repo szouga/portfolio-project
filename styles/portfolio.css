@@ -146,3 +146,9 @@ textarea.form-contact-input {
   justify-content: space-around;
   text-align: left;
 }
+
+.badges-styling {
+  font-family: Geist Mono;
+  font-size: 12px;
+  color: #6b7280;
+}
