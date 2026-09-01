@@ -109,6 +109,7 @@ class selector and adjust the properties given*/
   padding: 40px 40px;
   opacity: 100%;
   border-radius: 8px;
+  transform: translateY(-19%);
 }
 
 /* Strip down input boxes to minimalist bottom border style */
@@ -151,4 +152,9 @@ textarea.form-contact-input {
   font-family: Geist Mono;
   font-size: 12px;
   color: #6b7280;
+}
+
+.title-form {
+  font-family: var(--heading-font-family);
+  transform: translateY(-50%);
 }
