@@ -141,3 +141,8 @@ class selector and adjust the properties given*/
 textarea.form-contact-input {
   resize: none;
 }
+
+.about-section {
+  justify-content: space-around;
+  text-align: left;
+}
