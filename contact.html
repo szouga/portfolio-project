@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" style="overflow-x: hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,12 +33,16 @@
 
     <title>Portfolio Project</title>
   </head>
-  <body class="d-flex flex-column min-vh-100">
+  <body class="d-flex flex-column min-vh-100" style="overflow-x: hidden">
     <!-- HEADER -->
     <header class="py-4">
-      <div class="container d-flex justify-content-between align-items-center">
-        <div class="font-monospace fw-bold text-dark fs-5">
-          SCZN
+      <div
+        class="container d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3"
+      >
+        <div
+          class="font-monospace fw-bold text-dark fs-5 text-center text-sm-start"
+        >
+          SCZN <br class="d-sm-none" />
           <span class="text-primary small" style="font-size: 0.75rem"
             ><em>Web Developer/Designer | UX Researcher</em></span
           >
@@ -65,9 +69,9 @@
       </div>
     </header>
 
-    <div class="container py-5">
+    <div class="flex-grow-1 container py-5">
       <div
-        class="rounded-4 ps-5 pe-5 position-relative overflow-hidden d-inline-block mb-5"
+        class="rounded-4 ps-4 pe-4 py-2 position-relative overflow-hidden d-inline-block mb-5"
         style="background-color: var(--secondary-color)"
       >
         <span
@@ -77,8 +81,8 @@
         >
       </div>
 
-      <div class="row justify-content-between">
-        <div class="col-12 col-md-6">
+      <div class="row justify-content-between align-items-start g-5">
+        <div class="col-12 col-md-6 col-lg-5">
           <div
             class="text-primary fw-bold text-uppercase small mb-3 tracking-wider font-monospace"
             style="font-size: 0.8rem"
@@ -113,16 +117,17 @@
           </a>
         </div>
 
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 col-lg-6">
           <div
-            class="form-container card border rounded-4 bg-white p-5 mx-auto"
+            class="form-container card border rounded-4 bg-white p-4 p-sm-5 mx-auto"
           >
             <form
               action="mailto:szouga9@gmail.com"
               method="post"
               enctype="text/plain"
+              class="d-flex flex-column"
             >
-              <h6 class="title-form">
+              <h6 class="title-form mb-4">
                 <em>Have a business inquiry, project idea, or questions? </em>
               </h6>
               <!--Full Name Input Group-->
@@ -182,8 +187,7 @@
 
               <button
                 type="submit"
-                class="btn btn-branding-outline w-100 py-1 fw-medium rounded-3"
-                style="transform: translateY(-80%)"
+                class="btn btn-branding-outline w-100 py-2 fw-medium rounded-3 mt-2"
               >
                 📨Send Message
               </button>
@@ -195,7 +199,7 @@
 
     <footer class="py-4 mt-auto">
       <div
-        class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 small text-secondary"
+        class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 small text-secondary text-break"
       >
         <div class="d-flex gap-3 font-monospace">
           <a

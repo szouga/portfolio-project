@@ -103,16 +103,23 @@ class selector and adjust the properties given*/
 }
 
 .form-container {
-  width: 520px;
-  height: 444px;
-  gap: 32px;
-  padding: 40px 40px;
-  opacity: 100%;
+  width: 100%; /* Tells the form to fill small screens fully without spilling over */
+  max-width: 520px; /* Ensures the form never expands past your target size on desktops */
+  /* Remove fixed height: 444px; so the form scales up and down naturally to fit input spacing */
+  padding: 40px;
+  background-color: #ffffff;
   border-radius: 8px;
-  transform: translateY(-19%);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); /* Adds clean depth since we removed fixed height boundaries */
 }
 
-/* Strip down input boxes to minimalist bottom border style */
+/* On large viewports (992px and up), restore your specific design translations */
+@media (min-width: 992px) {
+  .form-container {
+    transform: translateY(-19%);
+  }
+}
+
+/* --- Your Minimalist Input Style Overrides (Kept exactly as you wrote them) --- */
 .form-contact-input {
   border: none !important;
   border-bottom: 1px solid #e5e7eb !important;
@@ -126,18 +133,15 @@ class selector and adjust the properties given*/
   transition: border-color 0.2s ease-in-out;
 }
 
-/* Custom placeholder color tint styling */
 .form-contact-input::placeholder {
   color: #9ca3af;
   opacity: 1;
 }
 
-/* Focused active baseline state indicator adjustment */
 .form-contact-input:focus {
   background-color: transparent !important;
-  border-bottom-color: #2563eb !important; /* Turns blue when active */
+  border-bottom-color: #2563eb !important;
 }
-
 /* Remove default textarea adjustment handle lines */
 textarea.form-contact-input {
   resize: none;
@@ -157,4 +161,16 @@ textarea.form-contact-input {
 .title-form {
   font-family: var(--heading-font-family);
   transform: translateY(-50%);
+}
+
+/* Small screens: Applies a soft card radius */
+.hero-responsive-radius {
+  border-radius: 1.5rem !important; /* Matches Bootstrap's rounded-4 scale */
+}
+
+/* Large screens (992px and up): Transforms into a full pill shape */
+@media (min-width: 992px) {
+  .hero-responsive-radius {
+    border-radius: 50rem !important; /* Matches Bootstrap's rounded-pill scale */
+  }
 }

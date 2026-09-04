@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" style="overflow-x: hidden">
+  <!-- Hard-locks the HTML layout viewport from scaling sideways -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +15,6 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -22,7 +22,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,15 +29,19 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/portfolio.css" />
-
     <title>Portfolio Project</title>
   </head>
-  <body class="d-flex flex-column min-vh-100">
+  <!-- overflow-x-hidden safeguards rendering engines on older mobile Safari builds -->
+  <body class="d-flex flex-column min-vh-100" style="overflow-x: hidden">
     <!-- HEADER -->
     <header class="py-4">
-      <div class="container d-flex justify-content-between align-items-center">
-        <div class="font-monospace fw-bold text-dark fs-5">
-          SCZN
+      <div
+        class="container d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3"
+      >
+        <div
+          class="font-monospace fw-bold text-dark fs-5 text-center text-sm-start"
+        >
+          SCZN <br class="d-sm-none" />
           <span class="text-primary small" style="font-size: 0.75rem"
             ><em>Web Developer/Designer | UX Researcher</em></span
           >
@@ -63,203 +66,212 @@
       </div>
     </header>
 
-    <!--container for all three cards-->
-    <div class="container gx-1 gx-md-4">
-      <div
-        class="rounded-4 ps-5 pe-5 position-relative overflow-hidden d-inline-block mb-5"
-        style="background-color: var(--secondary-color)"
-      >
-        <span
-          class="text-dark tracking-wider fw-bolder"
-          style="font-family: Geist"
-          >My Projects</span
+    <!-- CONTAINER FOR ALL THREE CARDS -->
+    <main class="flex-grow-1 py-5">
+      <div class="container gx-3 gx-md-4">
+        <!-- Header Banner Section -->
+        <div
+          class="rounded-4 ps-4 pe-4 py-2 position-relative overflow-hidden d-inline-block mb-5"
+          style="background-color: var(--secondary-color)"
         >
+          <span
+            class="text-dark tracking-wider fw-bolder"
+            style="font-family: Geist"
+            >My Projects</span
+          >
+        </div>
+
+        <div class="row g-4">
+          <!-- CONTAINER FOR CROISSANT PROJECT -->
+          <div class="col-12 col-lg-4">
+            <div class="p-4 border rounded-3 bg-white h-100 d-flex flex-column">
+              <a
+                href="https://szouga.github.io/Croissant/index.html"
+                class="d-block text-center"
+                target="_blank"
+              >
+                <img
+                  src="images/animated-croissant.gif"
+                  class="img-fluid w-100 shadow"
+                  alt="animated croissant gif"
+                  style="
+                    border-radius: 4px;
+                    max-height: 220px;
+                    object-fit: cover;
+                  "
+                />
+              </a>
+              <p
+                class="text-primary fw-bold text-uppercase small mt-4 mb-2 tracking-wider font-monospace"
+                style="font-size: 0.8rem"
+              >
+                Simple Website Template
+              </p>
+              <p
+                class="fs-4 fw-bold"
+                style="font-family: var(--heading-font-family)"
+              >
+                Croissant Project
+              </p>
+              <p
+                class="fs-6 text-secondary flex-grow-1"
+                style="font-family: var(--subheading-font-family)"
+              >
+                A responsive static web application about croissants featuring a
+                dynamic navigation menu that optimizes automatically across
+                mobile and desktop devices.
+              </p>
+              <hr />
+              <div class="d-flex flex-wrap gap-2">
+                <p
+                  class="badges-styling badge bg-body-secondary px-3 py-2 rounded-1 m-0 text-dark"
+                >
+                  Bootstrap
+                </p>
+                <p
+                  class="badges-styling badge bg-body-secondary px-3 py-2 rounded-1 m-0 text-dark"
+                >
+                  HTML
+                </p>
+                <p
+                  class="badges-styling badge bg-body-secondary px-3 py-2 rounded-1 m-0 text-dark"
+                >
+                  CSS
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CONTAINER FOR AI PROJECT -->
+          <div class="col-12 col-lg-4">
+            <div class="p-4 border rounded-3 bg-white h-100 d-flex flex-column">
+              <a
+                href="https://szouga.github.io/french-poem-generator/"
+                class="d-block text-center"
+                target="_blank"
+              >
+                <img
+                  src="images/ai-french-poem-generator.png"
+                  class="img-fluid w-100 shadow"
+                  alt="ai french poem generator thumbnail"
+                  style="
+                    border-radius: 4px;
+                    max-height: 220px;
+                    object-fit: cover;
+                  "
+                />
+              </a>
+              <p
+                class="text-primary fw-bold text-uppercase small mt-4 mb-2 tracking-wider font-monospace"
+                style="font-size: 0.8rem"
+              >
+                AI
+              </p>
+              <p
+                class="fs-4 fw-bold"
+                style="font-family: var(--heading-font-family)"
+              >
+                AI French Poem Generator
+              </p>
+              <p
+                class="fs-6 text-secondary flex-grow-1"
+                style="font-family: var(--subheading-font-family)"
+              >
+                A fun generator that can turn any random topic into a
+                breath-taking poem in French.
+              </p>
+              <hr />
+              <div class="d-flex flex-wrap gap-2">
+                <p
+                  class="badges-styling badge bg-body-secondary px-3 py-2 rounded-1 m-0 text-dark"
+                >
+                  UI Animation
+                </p>
+                <p
+                  class="badges-styling badge bg-body-secondary px-3 py-2 rounded-1 m-0 text-dark"
+                >
+                  APIs
+                </p>
+                <p
+                  class="badges-styling badge bg-body-secondary px-3 py-2 rounded-1 m-0 text-dark"
+                >
+                  JavaScript
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CONTAINER FOR WEATHER API PROJECT -->
+          <div class="col-12 col-lg-4">
+            <div class="p-4 border rounded-3 bg-white h-100 d-flex flex-column">
+              <a
+                href="https://szouga.github.io/shecodes_weather_app_project/"
+                class="d-block text-center"
+                target="_blank"
+              >
+                <img
+                  src="images/weather-app.png"
+                  class="img-fluid w-100 shadow"
+                  alt="weather app thumbnail"
+                  style="
+                    border-radius: 4px;
+                    max-height: 220px;
+                    object-fit: cover;
+                  "
+                />
+              </a>
+              <p
+                class="text-primary fw-bold text-uppercase small mt-4 mb-2 tracking-wider font-monospace"
+                style="font-size: 0.8rem"
+              >
+                API
+              </p>
+              <p
+                class="fs-4 fw-bold"
+                style="font-family: var(--heading-font-family)"
+              >
+                Weather App
+              </p>
+              <p
+                class="fs-6 text-secondary flex-grow-1"
+                style="font-family: var(--subheading-font-family)"
+              >
+                Check the weather with this app made with data extracted from
+                SheCodes Weather API.
+              </p>
+              <hr />
+              <div class="d-flex flex-wrap gap-2">
+                <p
+                  class="badges-styling badge bg-body-secondary px-3 py-2 rounded-1 m-0 text-dark"
+                >
+                  APIs
+                </p>
+                <p
+                  class="badges-styling badge bg-body-secondary px-3 py-2 rounded-1 m-0 text-dark"
+                >
+                  App Dev
+                </p>
+                <p
+                  class="badges-styling badge bg-body-secondary px-3 py-2 rounded-1 m-0 text-dark"
+                >
+                  Data
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </main>
 
-      <div class="row">
-        <!--container for croissant project-->
-        <div class="col-4 pb-4 border rounded-3 bg-white">
-          <br />
-          <a
-            href="https://szouga.github.io/Croissant/index.html"
-            class="btn d-block mx-auto"
-            target="_blank"
-          >
-            <img
-              src="images/animated-croissant.gif"
-              class="img-fluid shadow"
-              alt="animated croissant gif"
-              style="border-radius: 4px; width: 245px; height: 220px"
-            />
-          </a>
-          <br />
-          <p
-            class="text-primary fw-bold text-uppercase small mb-3 tracking-wider font-monospace"
-            style="font-size: 0.8rem"
-          >
-            Simple Website Template
-          </p>
-          <p
-            class="fs-4 fw-bold"
-            style="font-family: var(--heading-font-family)"
-          >
-            Croissant Project
-          </p>
-          <p
-            class="fs-6"
-            style="font-family: var(--subheading-font-family); color: #6b7280"
-          >
-            A responsive static web application about croissants featuring a
-            dynamic navigation menu that optimizes automatically across mobile
-            and desktop devices.
-          </p>
-          <hr />
-          <div class="d-flex justify-content-start gap-2">
-            <p
-              class="badges-styling badge d-inline-block bg-body-secondary px-3 py-2 rounded-1 m-0"
-            >
-              Bootstrap
-            </p>
-
-            <p
-              class="badges-styling badge d-inline-block bg-body-secondary px-3 py-2 rounded-1 m-0"
-            >
-              HTML
-            </p>
-
-            <p
-              class="badges-styling badge d-inline-block bg-body-secondary px-3 py-2 rounded-1 m-0"
-            >
-              CSS
-            </p>
-          </div>
-        </div>
-
-        <!--container for AI project-->
-
-        <div class="col-4 border rounded-3 bg-white">
-          <br />
-          <a
-            href="https://szouga.github.io/french-poem-generator/"
-            target="_blank"
-          >
-            <img
-              src="images/ai-french-poem-generator.png"
-              class="img-fluid shadow"
-              alt="ai french poem generator thumbnail"
-              style="border-radius: 4px; width: 363px; height: 220px"
-            />
-          </a>
-          <br />
-          <br />
-
-          <p
-            class="text-primary fw-bold text-uppercase small mb-3 tracking-wider font-monospace"
-            style="font-size: 0.8rem"
-          >
-            AI
-          </p>
-          <p
-            class="fs-4 fw-bold"
-            style="font-family: var(--heading-font-family)"
-          >
-            AI French Poem Generator
-          </p>
-          <p
-            class="fs-6"
-            style="font-family: var(--subheading-font-family); color: #6b7280"
-          >
-            A fun generator that can turn any random topic into a breath-taking
-            poem in French
-          </p>
-          <hr />
-          <div class="d-flex justify-content-start gap-2">
-            <p
-              class="badges-styling badge d-inline-block bg-body-secondary px-3 py-2 rounded-1 m-0"
-            >
-              UI Animation
-              <!--request appears under input once
-                submit button is clicked-->
-            </p>
-
-            <p
-              class="badges-styling badge d-inline-block bg-body-secondary px-3 py-2 rounded-1 m-0"
-            >
-              APIs
-            </p>
-
-            <p
-              class="badges-styling badge d-inline-block bg-body-secondary px-3 py-2 rounded-1 m-0"
-            >
-              JavaScript
-            </p>
-          </div>
-        </div>
-
-        <!--container for weather API project-->
-        <div class="col-4 border rounded-3 bg-white">
-          <br />
-          <a
-            href="https://szouga.github.io/shecodes_weather_app_project/"
-            class="btn d-block mx-auto"
-            target="_blank"
-          >
-            <img
-              src="images/weather-app.png"
-              class="img-fluid shadow"
-              alt="weather app thumbnail"
-              style="border-radius: 4px; width: 363px; height: 220px"
-            />
-          </a>
-          <br />
-          <p
-            class="text-primary fw-bold text-uppercase small mb-3 tracking-wider font-monospace"
-            style="font-size: 0.8rem"
-          >
-            API
-          </p>
-          <p
-            class="fs-4 fw-bold"
-            style="font-family: var(--heading-font-family)"
-          >
-            Weather App
-          </p>
-          <p
-            class="fs-6"
-            style="font-family: var(--subheading-font-family); color: #6b7280"
-          >
-            Check the weather with this app made with data extracted from
-            SheCodes Weather API
-          </p>
-          <hr />
-          <div class="d-flex justify-content-start gap-2">
-            <p
-              class="badges-styling badge d-inline-block bg-body-secondary px-3 py-2 rounded-1 m-0"
-            >
-              APIs
-            </p>
-
-            <p
-              class="badges-styling badge d-inline-block bg-body-secondary px-3 py-2 rounded-1 m-0"
-            >
-              App Development
-            </p>
-
-            <p
-              class="badges-styling badge d-inline-block bg-body-secondary px-3 py-2 rounded-1 m-0"
-            >
-              Data Manipulation
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    <!-- FOOTER -->
     <footer class="py-4 mt-auto">
+      <!-- FIXED: Added text-break utility class to force long netlify sub-domain strings to wrap on tiny phone frames -->
       <div
-        class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 small text-secondary"
+        class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 small text-secondary text-break"
       >
-        <div class="d-flex gap-3 font-monospace">
+        <div
+          class="d-flex flex-wrap justify-content-center gap-3 font-monospace"
+        >
           <a
             href="https://github.com/szouga"
             target="_blank"
@@ -281,7 +293,10 @@
             <i class="fa-regular fa-envelope text-dark"></i> Email
           </a>
         </div>
-        <div class="font-monospace text-end" style="font-size: 0.8rem">
+        <div
+          class="font-monospace text-center text-md-end"
+          style="font-size: 0.8rem"
+        >
           <a href="https://github.com/szouga/portfolio-project" target="_blank"
             >Website</a
           >

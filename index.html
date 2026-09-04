@@ -41,7 +41,9 @@
   <body class="d-flex flex-column min-vh-100">
     <!-- HEADER -->
     <header class="py-4">
-      <div class="container d-flex justify-content-between align-items-center">
+      <div
+        class="container d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3"
+      >
         <div class="font-monospace fw-bold text-dark fs-5">
           SCZN
           <span class="text-primary small" style="font-size: 0.75rem"
@@ -73,41 +75,43 @@
     </header>
 
     <!-- MAIN HERO CONTENT -->
-    <main class="flex-grow-1 d-block mx-auto align-items-center py-5">
+    <main class="flex-grow-1 py-5">
       <!--background-->
-      <div class="hero rounded-pill">
-        <div class="row align-items-center g-5">
-          <!-- Text Block -->
-          <div class="col-12 col-md-7 d-block mx-auto">
-            <h1
-              class="display-4 fw-black text-dark lh-1 mb-4 poppins-font"
-              style="font-weight: 900; font-size: 3.5rem"
-            >
-              Sophie Clement<br />Zouga Ndong
-            </h1>
-            <p
-              class="text-secondary fs-6 mb-4 roboto-font lh-base"
-              style="max-width: 480px"
-            >
-              Crafting highly polished, accessible, and high-performance user
-              interfaces. I bridge the gap between design systems and clean
-              production code.
-            </p>
-            <div class="d-flex gap-3 pt-2">
-              <a href="/contact.html" class="text-decoration-none">
-                <button
-                  class="btn btn-branding-outline fw-semibold fs-6 text-dark px-4 py-2 rounded-1 fw-medium d-flex align-items-center gap-2"
-                >
-                  Contact Me
-                </button>
-              </a>
-              <a href="#view-featured-projects">
-                <button
-                  class="btn btn-branding-outline fw-semibold fs-6 text-dark px-4 py-2 rounded-1 fw-medium scroll-behavior-smooth"
-                >
-                  View Projects
-                </button>
-              </a>
+      <div class="container">
+        <div class="hero hero-responsive-radius p-4 p-md-5">
+          <div class="row align-items-center g-4">
+            <!-- Text Block -->
+            <div class="col-12 col-md-8 mx-auto text-center text-md-start">
+              <h1
+                class="display-4 fw-black text-dark lh-1 mb-4 poppins-font"
+                style="font-weight: 900; font-size: 3.5rem"
+              >
+                Sophie Clement<br />Zouga Ndong
+              </h1>
+              <p
+                class="text-secondary fs-6 mb-4 roboto-font lh-base"
+                style="max-width: 480px"
+              >
+                Crafting highly polished, accessible, and high-performance user
+                interfaces. I bridge the gap between design systems and clean
+                production code.
+              </p>
+              <div class="d-flex gap-3 pt-2">
+                <a href="/contact.html" class="text-decoration-none">
+                  <button
+                    class="btn btn-branding-outline fw-semibold fs-6 text-dark px-4 py-2 rounded-1 fw-medium d-flex align-items-center gap-2"
+                  >
+                    Contact Me
+                  </button>
+                </a>
+                <a href="#view-featured-projects">
+                  <button
+                    class="btn btn-branding-outline fw-semibold fs-6 text-dark px-4 py-2 rounded-1 fw-medium scroll-behavior-smooth"
+                  >
+                    View Projects
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -122,8 +126,8 @@
       </p>
 
       <div class="container">
-        <div class="row mb-5">
-          <div class="col d-none d-lg-block">
+        <div class="row align-items-center mb-5 g-4">
+          <div class="col-12 col-lg-6 d-none d-lg-block">
             <img
               src="images/yogurt.png"
               class="img-fluid shadow"
@@ -131,13 +135,13 @@
               style="border-radius: 24px 25px"
             />
           </div>
-          <div class="col">
+          <div class="col-12 col-lg-6">
             <div class="project-description">
               <h2 class="mb-5" style="font-family: var(--heading-font-family)">
                 Yogurt Project
               </h2>
               <p
-                class="mb-5"
+                class="mb-4"
                 style="font-family: var(--subheading-font-family)"
               >
                 A fun interactive landing page about yogurt that explores
@@ -155,14 +159,14 @@
           </div>
         </div>
 
-        <div class="row mb-5">
-          <div class="col">
-            <div class="project-description">
-              <h2 class="mb-5" style="font-family: var(--heading-font-family)">
+        <div class="row align-items-center mb-5 g-4">
+          <div class="col-12 col-lg-6 order-2 order-lg-1">
+            <div class="project-description text-center text-lg-start">
+              <h2 class="mb-4" style="font-family: var(--heading-font-family)">
                 AI French Poem Generator
               </h2>
               <p
-                class="mb-5"
+                class="mb-4"
                 style="font-family: var(--subheading-font-family)"
               >
                 A tool that can turn any random topic into a breath-taking poem
@@ -177,7 +181,7 @@
               </a>
             </div>
           </div>
-          <div class="col d-none d-lg-block">
+          <div class="col-12 col-lg-6 d-none d-lg-block order-1 order-lg-2">
             <img
               src="images/ai-french-poem-generator.png"
               class="img-fluid shadow"
@@ -187,8 +191,8 @@
           </div>
         </div>
 
-        <div class="row mb-5">
-          <div class="col d-none d-lg-block">
+        <div class="row align-items-center mb-5 g-4">
+          <div class="col-12 col-lg-6 d-none d-lg-block">
             <img
               src="images/weather-app.png"
               class="img-fluid shadow"
@@ -196,13 +200,13 @@
               style="border-radius: 24px 25px"
             />
           </div>
-          <div class="col">
+          <div class="col-12 col-lg-6">
             <div class="project-description">
-              <h2 class="mb-5" style="font-family: var(--heading-font-family)">
+              <h2 class="mb-4" style="font-family: var(--heading-font-family)">
                 Weather App
               </h2>
               <p
-                class="mb-5"
+                class="mb-4"
                 style="font-family: var(--subheading-font-family)"
               >
                 Check the weather with this app made with SheCodes Weather API
